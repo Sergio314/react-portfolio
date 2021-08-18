@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Spinner from '../components/spinner/spinner';
+import Spinner from '../components/spinner';
 import { commonRoutes } from './common';
 
 const routes = [
@@ -9,14 +9,14 @@ const routes = [
 ];
 
 export const Routes = () => (
-	<React.Suspense fallback={<Spinner/>}>
+	<React.Suspense fallback={<><Spinner/>Loading</>}>
 		<Switch>
 			{
 				routes.map(({ Component, ...route }, key) => (
 					<Route
 						key={key}
 						path={route.path}
-						// render={() => route.protected ? <OidcWrapper><Component /></OidcWrapper> : <Component />}
+						component={Component}
 					/>
 				))
 			}

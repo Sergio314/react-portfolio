@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-const HomePage = React.lazy(() => import('../pages/home/home'));
+const Home = React.lazy(() => import('../pages/home'));
 
 export const commonRoutes = [
   {
     path: '/',
     exact: true,
-    Component: HomePage,
+    Component: Home,
   },
 ];
