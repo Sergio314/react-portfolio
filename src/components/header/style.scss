@@ -1,0 +1,19 @@
+@import '../../styles/theme.scss';
+@import '../../styles/mixins.scss';
+
+.header-container {
+  @include flex(row, space-between, center);
+  margin-top: -30px;
+  .header-logo img {
+    width: 300px;
+    height: 150px;
+  }
+  .header-nav {
+    width: 40%;
+    @include flex(row, space-around, center);
+    .nav-link {
+      text-decoration: none;
+      color: $secondary-grey;
+    }
+  }
+}
