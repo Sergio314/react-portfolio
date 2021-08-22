@@ -4,4 +4,8 @@
 body {
   background: $primary-black;
   color: $secondary-grey;
+  padding: 15px;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
 }

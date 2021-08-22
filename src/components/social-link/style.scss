@@ -1,9 +1,15 @@
+@import '../../styles/theme.scss';
+
 .social-link {
   width: 20px;
   height: auto;
-  background-color: aliceblue;
-  img {
+  svg {
     width: 20px;
     height: auto;
+    fill: $secondary-greyblue;
+    &:hover {
+      fill: $secondary-lightblue;
+      transition: all 0.2 ease-in-out;
+    }
   }
 }

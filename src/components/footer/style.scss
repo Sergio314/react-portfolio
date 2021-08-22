@@ -2,14 +2,16 @@
 @import '../../styles/mixins.scss';
 
 .footer-container {
+  @include flex(row, space-between, center);
   position: fixed;
   bottom: 0px;
-  left: 0;
-  padding: 15px 60px 30px;
+  left: 0px;
+  padding: 15px 30px;
   width: 100%;
   z-index: 100;
   transition: all 0.2s ease-in-out;
-  .social-links {
-    display: flex;
+  .footer-item {
+    @include flex(row, space-evenly, center);
+    width: 300px;
   }
 }
