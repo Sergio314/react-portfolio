@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.scss';
 
-const BurgerMenu = ({ close, ...props }) => (
+const BurgerMenu = ({ close }) => (
   <div className="burgermenu">
     <ul>
       <li onClick={close}>Home</li>

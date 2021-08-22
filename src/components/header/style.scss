@@ -3,6 +3,9 @@
 
 .header-container {
   @include flex(row, space-between, center);
+  @include media-breakpoint-sm() {
+    @include flex(column, space-between, center);
+  }
   margin-top: -30px;
   .header-logo img {
     width: 300px;
@@ -10,10 +13,21 @@
   }
   .header-nav {
     width: 40%;
-    @include flex(row, space-around, center);
+    @include flex(row, space-evenly, center);
+    @include media-breakpoint-sm() {
+      @include flex(column, center, center);
+    }
     .nav-link {
       text-decoration: none;
       color: $secondary-grey;
+      &:hover {
+        color: $secondary-greyblue;
+        transition: all 0.2s ease-in-out;
+      }
+      @include media-breakpoint-sm() {
+        @include flex(column, center, center);
+        display: none;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import BurgerButton from '../burger-button';
+import BurgerMenu from '../burger-menu';
 import './style.scss';
 
 const Header = () => {
@@ -13,14 +14,19 @@ const Header = () => {
         <img src={Logo} alt="logo" />
       </div>
       <div className="header-nav">
-        <Link className="nav-link" to="/">
-          About me
-        </Link>
-        <Link className="nav-link" to="/expertise">
-          Expertise
-        </Link>
-        <BurgerButton isOpened={isMobileMenuOpened} onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)} />
+        {!isMobileMenuOpened && (
+          <Link className="nav-link" to="/">
+            About me
+          </Link>
+        )}
+        {!isMobileMenuOpened && (
+          <Link className="nav-link" to="/expertise">
+            Expertise
+          </Link>
+        )}
       </div>
+      {<BurgerButton isOpened={isMobileMenuOpened} onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)} />}
+      {isMobileMenuOpened && <BurgerMenu />}
     </div>
   );
 };
