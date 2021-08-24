@@ -2,6 +2,8 @@
 @import '../../styles/mixins.scss';
 
 .header-container {
+  font-size: 20px;
+  z-index: 100;
   @include flex(row, space-between, center);
   @include media-breakpoint-sm() {
     @include flex(column, space-between, center);

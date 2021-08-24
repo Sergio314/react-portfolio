@@ -16,7 +16,7 @@ const socLinks = [
   },
 ];
 const Footer = () => {
-  const renderSocLinks = useMemo(() => socLinks.map((link) => <SocialLink {...link} />), []);
+  const renderSocLinks = useMemo(() => socLinks.map((link) => <SocialLink {...link} key={link.to} />), []);
 
   return (
     <div className="footer-container">
