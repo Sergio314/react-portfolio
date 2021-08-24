@@ -7,20 +7,22 @@ const Home = () => {
   return (
     <div className="home-page">
       <Header />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa
-      eos repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum
-      dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
-      repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum dolor
-      sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos repudiandae.
-      Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum dolor sit amet,
-      consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos repudiandae. Quisquam
-      quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos repudiandae. Quisquam quas nam
-      inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos repudiandae. Quisquam quas nam
-      inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum dolor sit amet, consectetur
-      adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos repudiandae. Quisquam quas nam
-      inventore harum voluptatum nisi quo magnam aut labore excepturi!
+      <article>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor
+        culpa eos repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
+        repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
+        repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
+        repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
+        repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
+        repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Voluptatum ut voluptate eveniet aperiam sed dolor culpa eos
+        repudiandae. Quisquam quas nam inventore harum voluptatum nisi quo magnam aut labore excepturi!
+      </article>
       <Footer />
     </div>
   );

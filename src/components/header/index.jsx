@@ -26,7 +26,7 @@ const Header = () => {
         )}
       </div>
       {<BurgerButton isOpened={isMobileMenuOpened} onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)} />}
-      {isMobileMenuOpened && <BurgerMenu />}
+      {isMobileMenuOpened && <BurgerMenu close={() => setIsMobileMenuOpened(false)} />}
     </div>
   );
 };

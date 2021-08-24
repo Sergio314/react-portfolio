@@ -1,0 +1,6 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/theme.scss';
+
+.burgermenu {
+  @include flex(column, space-between, center);
+}
