@@ -39,7 +39,7 @@ body,
 head {
   display: block;
   font-size: 52px;
-  color: transparent;
+  color: $secondary-grey;
 }
 
 head::before,
@@ -54,6 +54,7 @@ body::after {
   content: '.';
   mix-blend-mode: screen;
   animation: 44s -27s move infinite ease-in-out alternate;
+  pointer-events: none;
 }
 
 body::before {
