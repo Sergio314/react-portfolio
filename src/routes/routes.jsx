@@ -10,7 +10,7 @@ export const Routes = () => (
   <React.Suspense fallback={<Spinner />}>
     <Switch>
       {routes.map(({ Component, ...route }, key) => (
-        <Route key={key} path={route.path} component={Component} />
+        <Route key={key} path={route.path} component={Component} {...route} />
       ))}
     </Switch>
   </React.Suspense>
